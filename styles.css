@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Young Serif', serif;
+    background-color: white;
+}
+
+header, footer {
+    text-align: center;
+}
+
+header img, footer img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.vegetable-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 768px;
+}
+
+.vegetable-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #e0e19b;
+    border: 2px solid #b5d99c;
+    border-radius: 12px;
+    padding: 26px;
+    width: 220px;
+    height: 250px;
+}
+
+.vegetable-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #388e3c;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 150px;
+}
+
+.vegetable-frame img {
+    width: 100%;
+    height: auto;
+}
+
+.vegetable-name {
+    margin-top: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #4b830d;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .vegetable-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .vegetable-card {
+        width: 100%;
+        max-width: 300px; 
+        height: auto;
+    }
+
+    .vegetable-frame {
+        width: 70%;
+        height: auto;
+    }
+
+    .vegetable-name {
+        font-size: 15px;
+    }
+}
